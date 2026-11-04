@@ -1,6 +1,6 @@
 import React from 'react';
 import { Sparkles, Heart, Flame, ShieldCheck } from 'lucide-react';
-import { RESTAURANT_INFO } from '../data/restaurantData';
+import { RESTAURANT_INFO, heroDiningImg } from '../data/restaurantData';
 
 export const AboutSection: React.FC = () => {
   return (
@@ -15,9 +15,12 @@ export const AboutSection: React.FC = () => {
           <div className="lg:col-span-5 space-y-6">
             <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
               <img
-                src="/src/assets/images/hero_restaurant_dining_1793807443183.jpg"
+                src={heroDiningImg}
                 alt="Dining interior at JB's Kitchen Mohali"
                 referrerPolicy="no-referrer"
+                onError={(e) => {
+                  (e.target as HTMLImageElement).src = '/images/hero_restaurant_dining.jpg';
+                }}
                 className="w-full h-80 sm:h-96 object-cover"
                 loading="lazy"
               />

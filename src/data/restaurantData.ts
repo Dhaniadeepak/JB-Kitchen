@@ -1,3 +1,19 @@
+import heroDiningImg from '../assets/images/hero_restaurant_dining_1793807443183.jpg';
+import dalMakhaniImg from '../assets/images/dish_dal_makhani_1793807442225.jpg';
+import tandooriPlatterImg from '../assets/images/dish_tandoori_platter_1793807444142.jpg';
+import butterChickenImg from '../assets/images/dish_butter_chicken_1793807445031.jpg';
+import amritsariKulchaImg from '../assets/images/dish_amritsari_kulcha_1793807444843.jpg';
+import kesarLassiImg from '../assets/images/beverage_kesar_lassi_1793807445604.jpg';
+
+export {
+  heroDiningImg,
+  dalMakhaniImg,
+  tandooriPlatterImg,
+  butterChickenImg,
+  amritsariKulchaImg,
+  kesarLassiImg,
+};
+
 export interface MenuItem {
   id: string;
   name: string;
@@ -69,7 +85,7 @@ export const SIGNATURE_DISHES: MenuItem[] = [
     spiciness: "Mild",
     isSignature: true,
     ingredients: ["Black Urad Lentils", "White Butter", "Slow-Cooked Tomato Puree", "Kasturi Methi", "Churned Cream"],
-    image: "/src/assets/images/dish_dal_makhani_1793807442225.jpg",
+    image: dalMakhaniImg,
     pairingSuggestion: "Pairs perfectly with Butter Garlic Naan or Jeera Rice"
   },
   {
@@ -83,7 +99,7 @@ export const SIGNATURE_DISHES: MenuItem[] = [
     spiciness: "Medium",
     isSignature: true,
     ingredients: ["Clay Oven Chicken", "Velvety Tomato Gravy", "Cashew Butter", "Kashmiri Mirch", "Kasoori Methi"],
-    image: "/src/assets/images/dish_butter_chicken_1793807445031.jpg",
+    image: butterChickenImg,
     pairingSuggestion: "Best enjoyed with Laccha Paratha"
   },
   {
@@ -97,7 +113,7 @@ export const SIGNATURE_DISHES: MenuItem[] = [
     spiciness: "Robust",
     isSignature: true,
     ingredients: ["Artisan Paneer", "Cold Pressed Mustard Oil", "Hung Curd", "Charred Sweet Peppers", "Mint Relish"],
-    image: "/src/assets/images/dish_tandoori_platter_1793807444142.jpg",
+    image: tandooriPlatterImg,
     pairingSuggestion: "Served with pickled shallots & fresh mint dip"
   },
   {
@@ -111,7 +127,7 @@ export const SIGNATURE_DISHES: MenuItem[] = [
     spiciness: "Medium",
     isSignature: true,
     ingredients: ["Fermented Dough", "Spiced Potatoes", "Pomegranate Seeds (Anardana)", "Fresh Cilantro", "Desi Butter"],
-    image: "/src/assets/images/dish_amritsari_kulcha_1793807444843.jpg",
+    image: amritsariKulchaImg,
     pairingSuggestion: "Accompanied by spicy Pindi Chole & Imli pyaaz chutney"
   }
 ];
@@ -129,7 +145,7 @@ export const FULL_MENU: MenuItem[] = [
     spiciness: "Robust",
     isSignature: true,
     ingredients: ["Artisan Paneer", "Cold Pressed Mustard Oil", "Hung Curd", "Bell Peppers"],
-    image: "/src/assets/images/dish_tandoori_platter_1793807444142.jpg",
+    image: tandooriPlatterImg,
     pairingSuggestion: "Mint-Coriander Chutney"
   },
   {
@@ -142,7 +158,7 @@ export const FULL_MENU: MenuItem[] = [
     description: "Rustic highway-style tandoori chicken chunks marinated in crushed coriander seeds, black peppercorns, and yellow chilli.",
     spiciness: "Robust",
     ingredients: ["Farm Chicken", "Bhatti Spices", "Mustard Oil", "Ginger Garlic"],
-    image: "/src/assets/images/dish_tandoori_platter_1793807444142.jpg",
+    image: tandooriPlatterImg,
     pairingSuggestion: "Chilled Masala Cooler"
   },
   {
@@ -202,7 +218,7 @@ export const FULL_MENU: MenuItem[] = [
     spiciness: "Mild",
     isSignature: true,
     ingredients: ["Black Lentils", "Farm White Butter", "Tomato Purée", "Kasturi Methi"],
-    image: "/src/assets/images/dish_dal_makhani_1793807442225.jpg",
+    image: dalMakhaniImg,
     pairingSuggestion: "Garlic Naan"
   },
   {
@@ -216,7 +232,7 @@ export const FULL_MENU: MenuItem[] = [
     spiciness: "Medium",
     isSignature: true,
     ingredients: ["Tandoori Chicken", "Velvet Gravy", "Cashew Paste", "Fenugreek"],
-    image: "/src/assets/images/dish_butter_chicken_1793807445031.jpg",
+    image: butterChickenImg,
     pairingSuggestion: "Laccha Paratha"
   },
   {
@@ -298,7 +314,7 @@ export const FULL_MENU: MenuItem[] = [
     spiciness: "Medium",
     isSignature: true,
     ingredients: ["Flaky Dough", "Spiced Potatoes", "Anardana", "Desi Butter"],
-    image: "/src/assets/images/dish_amritsari_kulcha_1793807444843.jpg"
+    image: amritsariKulchaImg
   },
   {
     id: "br-2",
@@ -368,7 +384,7 @@ export const FULL_MENU: MenuItem[] = [
     spiciness: "Mild",
     isSignature: true,
     ingredients: ["Farm Curd", "Alphonso Mango", "Saffron", "Pistachio & Almonds"],
-    image: "/src/assets/images/beverage_kesar_lassi_1793807445604.jpg"
+    image: kesarLassiImg
   },
   {
     id: "bv-2",
@@ -421,42 +437,42 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: "gal-1",
     title: "The JB's Grand Dining Feast",
     category: "Signatures",
-    image: "/src/assets/images/hero_restaurant_dining_1793807443183.jpg",
+    image: heroDiningImg,
     caption: "A contemporary table feast showcasing authentic gravies, fresh tandoor breads, and ambient warmth."
   },
   {
     id: "gal-2",
     title: "18-Hour Simmered Dal Makhani",
     category: "Mains",
-    image: "/src/assets/images/dish_dal_makhani_1793807442225.jpg",
+    image: dalMakhaniImg,
     caption: "Slow-simmered whole black lentils finished with organic white butter swirl in artisan black ceramic."
   },
   {
     id: "gal-3",
     title: "Charred Tandoori Sizzle",
     category: "Starters",
-    image: "/src/assets/images/dish_tandoori_platter_1793807444142.jpg",
+    image: tandooriPlatterImg,
     caption: "Clay tandoor smoked malai paneer, chicken tikka, pickled onions, and fresh herb dip on slate."
   },
   {
     id: "gal-4",
     title: "Royal Murgh Makhani Gravy",
     category: "Mains",
-    image: "/src/assets/images/dish_butter_chicken_1793807445031.jpg",
+    image: butterChickenImg,
     caption: "Velvety spiced tomato reduction with tandoori roast chicken in traditional hammered copper."
   },
   {
     id: "gal-5",
     title: "Flaky Amritsari Stuffed Kulcha",
     category: "Breads",
-    image: "/src/assets/images/dish_amritsari_kulcha_1793807444843.jpg",
+    image: amritsariKulchaImg,
     caption: "Hand-stretched golden crust opening with spiced potato, pomegranate seeds, and fresh churned butter."
   },
   {
     id: "gal-6",
     title: "Terracotta Saffron Mango Lassi",
     category: "Beverages",
-    image: "/src/assets/images/beverage_kesar_lassi_1793807445604.jpg",
+    image: kesarLassiImg,
     caption: "Traditional Punjabi lassi with Kashmiri saffron strands, chopped pistachios, and almond slivers."
   }
 ];

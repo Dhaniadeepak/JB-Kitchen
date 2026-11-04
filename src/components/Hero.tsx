@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowDown, Calendar, Sparkles, MapPin, Clock } from 'lucide-react';
-import { RESTAURANT_INFO } from '../data/restaurantData';
+import { RESTAURANT_INFO, heroDiningImg } from '../data/restaurantData';
 
 interface HeroProps {
   onOpenReservation: () => void;
@@ -12,9 +12,12 @@ export const Hero: React.FC<HeroProps> = ({ onOpenReservation }) => {
       {/* Background Image with optimized loading & measured contrast scrim */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/hero_restaurant_dining_1793807443183.jpg"
+          src={heroDiningImg}
           alt="Contemporary feast at JB's Kitchen Phase 5 Mohali"
           referrerPolicy="no-referrer"
+          onError={(e) => {
+            (e.target as HTMLImageElement).src = '/images/hero_restaurant_dining.jpg';
+          }}
           className="w-full h-full object-cover object-center transform scale-105 transition-transform duration-1000 ease-out"
         />
         {/* Measured dark scrim for WCAG AA readability */}

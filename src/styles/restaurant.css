@@ -1,0 +1,58 @@
+/* Restaurant custom styling and animation classes */
+
+.hero-gradient-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(24, 24, 27, 0.45) 0%,
+    rgba(24, 24, 27, 0.7) 60%,
+    rgba(24, 24, 27, 0.92) 100%
+  );
+}
+
+.hero-radial-vignette {
+  background: radial-gradient(
+    circle at 50% 40%,
+    rgba(24, 24, 27, 0.2) 0%,
+    rgba(24, 24, 27, 0.85) 100%
+  );
+}
+
+.dish-card-lift {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dish-card-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px -10px rgba(24, 24, 27, 0.12);
+}
+
+.subtle-hairline {
+  border-color: rgba(24, 24, 27, 0.08);
+}
+
+.subtle-hairline-dark {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Floating WhatsApp pulse effect */
+@keyframes whatsapp-ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+.whatsapp-float-btn {
+  animation: whatsapp-ripple 2.5s infinite;
+}
+
+/* Lightbox backdrop animation */
+.modal-backdrop-blur {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
